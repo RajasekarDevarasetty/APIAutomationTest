@@ -1,0 +1,65 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-08-31T10:34:24.824Z",
+        "line": 5,
+        "name": "Verify that the weather data service works as expected",
+        "description": "",
+        "id": "list-of-scenarios-for-weather-data-service-where-user-looking-for-info-based-on-city;verify-that-the-weather-data-service-works-as-expected",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5001300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "The weather data service endpoint",
+            "match": {
+              "location": "StepDefinitions.WeatherDataStepDef.getWeatherDataEndPoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3971001700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The user access want to see weather data info based on city",
+            "match": {
+              "location": "StepDefinitions.WeatherDataStepDef.getWeatherData()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1089213400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Validate the response of weather data service",
+            "match": {
+              "location": "StepDefinitions.WeatherDataStepDef.validateWeatherData()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "List of Scenarios for Weather Data Service where user looking for info based on city",
+    "description": "",
+    "id": "list-of-scenarios-for-weather-data-service-where-user-looking-for-info-based-on-city",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/FeatureFiles/WheatherData.feature",
+    "tags": []
+  }
+]
